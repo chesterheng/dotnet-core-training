@@ -18,6 +18,21 @@ namespace EFGetStarted
 
             Query();
             QueryEagerLoading();
+            QueryExplicitLoading();
+        }
+        private static void QueryExplicitLoading()
+        {
+            // Get a single blog
+            var blog = _context.Blogs
+                .Single(b => b.BlogId == 9);
+
+            // Load related posts
+            _context.Entry(blog)
+                .Collection(b => b.Posts)
+                .Load();
+
+            Console.WriteLine("Blog {0}", blog.Url);
+            blog.Posts.ForEach(post => Console.WriteLine(" - {0}", post.Title));
         }
 
         private static void QueryEagerLoading()
