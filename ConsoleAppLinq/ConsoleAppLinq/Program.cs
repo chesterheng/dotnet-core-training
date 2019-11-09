@@ -14,6 +14,39 @@ namespace ConsoleAppLinq
             letKeyword();
             nestingFrom();
             grouping();
+            joining();
+        }
+
+        private static void joining()
+        {
+            var books = new List<Book>()
+            {
+                new Book("Book A", 1990, new string[] { "Fantasy", "Romance" }, "Robert"),
+                new Book("Book B", 2001, new string[] { "Romance" }, "Robert"),
+                new Book("Book C", 2010, new string[] { "Romance" }),
+                new Book("Book D", 2005, new string[] { "Romance" }, "Alicia"),
+                new Book("Book E", 2011, new string[] { "Romance" }, "John"),
+            };
+            var authors = new Author[]
+            {
+                new Author { Name = "Robert", YearOfFirstBookRelease= 1980 },
+                new Author { Name = "Alicia", YearOfFirstBookRelease= 2005 },
+                new Author { Name = "John", YearOfFirstBookRelease= 2000 }
+            };
+            var results = from book in books
+                          join author in authors on book.Author equals author.Name
+                          select $"{book.Title} has been written by {author.Name} in " +
+                          $"{book.Year}, {book.Year - author.YearOfFirstBookRelease} years after " +
+                          $"the author published his first book";
+
+            foreach (var result in results)
+            {
+                Console.WriteLine(result);
+            }
+            // Book A has been written by Robert in 1990, 10 years after the author published his first book
+            // Book B has been written by Robert in 2001, 21 years after the author published his first book
+            // Book D has been written by Alicia in 2005, 0 years after the author published his first book
+            // Book E has been written by John in 2011, 11 years after the author published his first book
         }
 
         private static void grouping()
