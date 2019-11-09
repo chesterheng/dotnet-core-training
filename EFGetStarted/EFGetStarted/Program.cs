@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace EFGetStarted
@@ -11,8 +12,21 @@ namespace EFGetStarted
             // InsertData();
             // UpdateData();
             // DeleteData();
-            SaveRelatedData1();
-            SaveRelatedData2();
+            // SaveRelatedData1();
+            // SaveRelatedData2();
+
+            Query();
+        }
+
+        private static void Query()
+        {
+            var results =
+                from blog in _context.Blogs
+                select new { Blog = blog, NbPosts = blog.Posts.Count };
+            foreach (var result in results)
+            {
+                Console.WriteLine("Blog {0} has {1} post(s)", result.Blog.Url, result.NbPosts);
+            }
         }
 
         private static void SaveRelatedData2()
