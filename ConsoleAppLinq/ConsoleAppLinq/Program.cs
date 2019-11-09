@@ -12,6 +12,29 @@ namespace ConsoleAppLinq
             queryingOnStrings();
             queryingOnObjects();
             letKeyword();
+            nestingFrom();
+        }
+
+        private static void nestingFrom()
+        {
+            List<Book> books = new List<Book>() {
+                new Book("Book A", 1999, new string[] { "Fantasy", "Romance" }, "Robert"),
+                new Book("Book B", 2010, new string[] { "Romance" }, "Robert"),
+                new Book("Book C", 2001, new string[] { "Romance" }, "Alicia"),
+                new Book("Book D", 2005, new string[] { "Romance" }, "Alicia"),
+                new Book("Book E", 2011, new string[] { "Romance" }, "John"),
+            };
+
+            var tags = (from book in books
+                        from tag in book.Tags
+                        select tag).Distinct();
+
+            foreach (var tag in tags)
+            {
+                Console.WriteLine($"Tag: {tag}");
+            }
+            // Tag: Fantasy
+            // Tag: Romance
         }
 
         private static void letKeyword()
