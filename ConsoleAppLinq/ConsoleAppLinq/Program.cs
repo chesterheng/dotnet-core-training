@@ -15,6 +15,45 @@ namespace ConsoleAppLinq
             nestingFrom();
             grouping();
             joining();
+            outerJoin();
+        }
+
+        private static void outerJoin()
+        {
+            var books = new List<Book>()
+            {
+                new Book("Book A", 1990, new string[] { "Fantasy", "Romance" }, "Robert"),
+                new Book("Book B", 2001, new string[] { "Romance" }, "Robert"),
+                new Book("Book C", 2010, new string[] { "Romance" }),
+                new Book("Book D", 2005, new string[] { "Romance" }, "Alicia"),
+                new Book("Book E", 2011, new string[] { "Romance" }, "John"),
+            };
+            var authors = new Author[]
+            {
+                new Author { Name = "Robert", YearOfFirstBookRelease= 1980 },
+                new Author { Name = "Alicia", YearOfFirstBookRelease= 2005 },
+                new Author { Name = "John", YearOfFirstBookRelease= 2000 }
+            };
+            var booksAndAuthors =
+                from book in books
+                join author in authors
+                    on book.Author equals author.Name into pAuthor
+                from author in pAuthor.DefaultIfEmpty()
+                select new
+                {
+                    book,
+                    author
+                };
+            foreach (var result in booksAndAuthors)
+            {
+                Console.WriteLine($"Outer Join: {result.book.Title} - {result.author?.Name}");
+            }
+            // (Author.Name != null) ? Author.Name : null;
+            // Outer Join: Book A -Robert
+            // Outer Join: Book B -Robert
+            // Outer Join: Book C -
+            // Outer Join: Book D -Alicia
+            // Outer Join: Book E -John
         }
 
         private static void joining()
