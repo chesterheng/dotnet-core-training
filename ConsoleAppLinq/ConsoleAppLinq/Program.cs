@@ -13,6 +13,41 @@ namespace ConsoleAppLinq
             queryingOnObjects();
             letKeyword();
             nestingFrom();
+            grouping();
+        }
+
+        private static void grouping()
+        {
+            List<Book> books = new List<Book>() {
+                new Book("Book A", 1999, new string[] { "Fantasy", "Romance" }, "Robert"),
+                new Book("Book B", 2010, new string[] { "Romance" }, "Robert"),
+                new Book("Book C", 2001, new string[] { "Romance" }, "Alicia"),
+                new Book("Book D", 2005, new string[] { "Romance" }, "Alicia"),
+                new Book("Book E", 2011, new string[] { "Romance" }, "John"),
+            };
+
+            var groups = from book in books
+                         group book by book.Year into booksForYear
+                         select booksForYear;
+
+            foreach (var booksByYear in groups)
+            {
+                Console.WriteLine(booksByYear.Key + " -> " + booksByYear.Count());
+                foreach (var book in booksByYear)
+                {
+                    Console.WriteLine(" " + book.Title);
+                }
+                // 1999-> 1
+                //  Book A
+                // 2010-> 1
+                //  Book B
+                // 2001-> 1
+                //  Book C
+                // 2005-> 1
+                //  Book D
+                // 2011-> 1
+                //  Book E
+            }
         }
 
         private static void nestingFrom()
