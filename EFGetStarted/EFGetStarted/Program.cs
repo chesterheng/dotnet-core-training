@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Linq;
 
 namespace EFGetStarted
 {
@@ -8,6 +8,14 @@ namespace EFGetStarted
         static void Main(string[] args)
         {
             InsertData();
+            UpdateData();
+        }
+
+        private static void UpdateData()
+        {
+            var blog = _context.Blogs.First();
+            blog.Url = "http://sample.com/blog";
+            _context.SaveChanges();
         }
 
         private static void InsertData()
