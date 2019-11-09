@@ -10,6 +10,34 @@ namespace ConsoleAppLinq
         {
             basicExample();
             queryingOnStrings();
+            queryingOnObjects();
+        }
+
+        private static void queryingOnObjects()
+        {
+            List<Book> books = new List<Book>() {
+                new Book("Book A", 1999, new string[] { "Fantasy", "Romance" }, "Robert"),
+                new Book("Book B", 2010, new string[] { "Romance" }, "Robert"),
+                new Book("Book C", 2001, new string[] { "Romance" }, "Alicia"),
+                new Book("Book D", 2005, new string[] { "Romance" }, "Alicia"),
+                new Book("Book E", 2011, new string[] { "Romance" }, "John"),
+            };
+
+            // Get books published after 2000 ordoer by publication date
+            var recentBooks = from book in books
+                              where book.Year >= 2000
+                              orderby book.Year
+                              select book;
+
+            foreach (var book in recentBooks)
+            {
+                // String interpolation
+                Console.WriteLine($"Recent Book: {book.Title} - {book.Year}");
+            }
+            // Recent Book: Book C -2001
+            // Recent Book: Book D -2005
+            // Recent Book: Book B -2010
+            // Recent Book: Book E -2011
         }
 
         private static void queryingOnStrings()
