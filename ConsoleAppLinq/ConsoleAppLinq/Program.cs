@@ -9,6 +9,20 @@ namespace ConsoleAppLinq
         static void Main(string[] args)
         {
             basicExample();
+            queryingOnStrings();
+        }
+
+        private static void queryingOnStrings()
+        {
+            string text = "Hello Singapore!";
+            var result = from c in text
+                         where c != 'e' && c != 'a'
+                         select c;
+
+            foreach (char c in result)
+                Console.Write(c + " ");
+            Console.WriteLine();
+            // H l l o   S i n g p o r !
         }
 
         private static void basicExample()
