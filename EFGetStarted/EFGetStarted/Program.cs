@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -16,6 +17,20 @@ namespace EFGetStarted
             // SaveRelatedData2();
 
             Query();
+            QueryEagerLoading();
+        }
+
+        private static void QueryEagerLoading()
+        {
+            var blogs = _context.Blogs
+                .Include(blog => blog.Posts)
+                .ToList();
+
+            foreach (var blog in blogs)
+            {
+                Console.WriteLine("Blog {0}", blog.Url);
+                blog.Posts.ForEach(post => Console.WriteLine(" - {0}", post.Title));
+            }
         }
 
         private static void Query()
