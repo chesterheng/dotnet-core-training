@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Zenika\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Zenika\\.nuget\\packages"
+    ]
+  }
+}

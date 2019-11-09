@@ -1,0 +1,11 @@
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\bin\Debug\netcoreapp3.0\ConsoleAppLinq.exe
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\bin\Debug\netcoreapp3.0\ConsoleAppLinq.deps.json
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\bin\Debug\netcoreapp3.0\ConsoleAppLinq.runtimeconfig.json
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\bin\Debug\netcoreapp3.0\ConsoleAppLinq.runtimeconfig.dev.json
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\bin\Debug\netcoreapp3.0\ConsoleAppLinq.dll
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\bin\Debug\netcoreapp3.0\ConsoleAppLinq.pdb
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\obj\Debug\netcoreapp3.0\ConsoleAppLinq.csprojAssemblyReference.cache
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\obj\Debug\netcoreapp3.0\ConsoleAppLinq.AssemblyInfoInputs.cache
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\obj\Debug\netcoreapp3.0\ConsoleAppLinq.AssemblyInfo.cs
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\obj\Debug\netcoreapp3.0\ConsoleAppLinq.dll
+C:\Users\Zenika\source\repos\dotnet-core-training\ConsoleAppLinq\ConsoleAppLinq\obj\Debug\netcoreapp3.0\ConsoleAppLinq.pdb
