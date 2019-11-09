@@ -9,12 +9,20 @@ namespace EFGetStarted
         {
             InsertData();
             UpdateData();
+            DeleteData();
+        }
+
+        private static void DeleteData()
+        {
+            var blog = _context.Blogs.First();
+            _context.Blogs.Remove(blog);
+            _context.SaveChanges();
         }
 
         private static void UpdateData()
         {
             var blog = _context.Blogs.First();
-            blog.Url = "http://sample.com/blog";
+            blog.Url = "http://sample.com/blognewnew";
             _context.SaveChanges();
         }
 
