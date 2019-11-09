@@ -11,6 +11,30 @@ namespace ConsoleAppLinq
             basicExample();
             queryingOnStrings();
             queryingOnObjects();
+            letKeyword();
+        }
+
+        private static void letKeyword()
+        {
+            List<Book> books = new List<Book>() {
+                new Book("Book A", 1999, new string[] { "Fantasy", "Romance" }, "Robert"),
+                new Book("Book B", 2010, new string[] { "Romance" }, "Robert"),
+                new Book("Book C", 2001, new string[] { "Romance" }, "Alicia"),
+                new Book("Book D", 2005, new string[] { "Romance" }, "Alicia"),
+                new Book("Book E", 2011, new string[] { "Romance" }, "John"),
+            };
+
+            var fanstasyBooks = from book in books
+                                let category = book.Tags.First().ToLower()
+                                where category == "fantasy"
+                                select book;
+
+            foreach (var book in fanstasyBooks)
+            {
+                // Composite formatting
+                Console.WriteLine("Fantasy Book: {0} - {1}", book.Title, book.Year);
+            }
+            // Fantasy Book: Book A - 1999
         }
 
         private static void queryingOnObjects()
