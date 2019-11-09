@@ -1,0 +1,11 @@
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\bin\Debug\netcoreapp3.0\EFGetStarted.exe
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\bin\Debug\netcoreapp3.0\EFGetStarted.deps.json
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\bin\Debug\netcoreapp3.0\EFGetStarted.runtimeconfig.json
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\bin\Debug\netcoreapp3.0\EFGetStarted.runtimeconfig.dev.json
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\bin\Debug\netcoreapp3.0\EFGetStarted.dll
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\bin\Debug\netcoreapp3.0\EFGetStarted.pdb
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\obj\Debug\netcoreapp3.0\EFGetStarted.csprojAssemblyReference.cache
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\obj\Debug\netcoreapp3.0\EFGetStarted.AssemblyInfoInputs.cache
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\obj\Debug\netcoreapp3.0\EFGetStarted.AssemblyInfo.cs
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\obj\Debug\netcoreapp3.0\EFGetStarted.dll
+C:\Users\Zenika\source\repos\dotnet-core-training\EFGetStarted\EFGetStarted\obj\Debug\netcoreapp3.0\EFGetStarted.pdb
