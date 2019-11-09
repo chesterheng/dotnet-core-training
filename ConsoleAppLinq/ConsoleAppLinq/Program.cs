@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace ConsoleAppLinq
 {
@@ -17,6 +18,23 @@ namespace ConsoleAppLinq
             joining();
             outerJoin();
             extensionMethodsForCollection();
+            xmlExample();
+        }
+
+        private static void xmlExample()
+        {
+            // refer to ..\bin\Debug\netcoreapp3.0\Employees.xml
+            var document = XDocument.Load("Employees.xml");
+
+            var query =
+                from element in document.Element("Employees")?.Elements("Employee")
+                where element.Attribute("Gender")?.Value == "Female"
+                select element.Attribute("Name").Value;
+
+            foreach (var name in query)
+            {
+                Console.WriteLine($"XML Example: {name}");
+            }
         }
 
         private static void extensionMethodsForCollection()

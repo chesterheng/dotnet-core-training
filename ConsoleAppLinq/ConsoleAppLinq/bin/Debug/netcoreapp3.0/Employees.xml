@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Employees>
+  <Employee Name="Mr Lim" Gender="Male" />
+  <Employee Name="Mrs Lim" Gender="Female" />
+  <Employee Name="Mr Goh" Gender="Male" />
+  <Employee Name="Mr Wong" Gender="Male" />
+  <Employee Name="Mrs Goh" Gender="Female" />
+  <Employee Name="Mr Khoo" Gender="Male" />
+  <Employee Name="Mrs Wong" Gender="Female" />
+</Employees>
