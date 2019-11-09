@@ -16,10 +16,32 @@ namespace EFGetStarted
             // SaveRelatedData1();
             // SaveRelatedData2();
 
-            Query();
-            QueryEagerLoading();
-            QueryExplicitLoading();
+            // Query();
+            // QueryEagerLoading();
+            // QueryExplicitLoading();
+            QueryLazyLoading();
         }
+
+        private static void QueryLazyLoading()
+        {
+            // Loading blogs only
+            var blogs = _context.Blogs.ToList<Blog>();
+
+            foreach (var blog in blogs)
+            {
+                Console.WriteLine("Blog {0}", blog.Url);
+            }
+
+            Blog selectedBlog = blogs[0];
+
+            // Loads Posts for a selected Blog only (seperate SQL query)
+            var posts = selectedBlog.Posts;
+            foreach (var post in posts)
+            {
+                Console.WriteLine(" - {0}", post.Title);
+            }
+        }
+
         private static void QueryExplicitLoading()
         {
             // Get a single blog
