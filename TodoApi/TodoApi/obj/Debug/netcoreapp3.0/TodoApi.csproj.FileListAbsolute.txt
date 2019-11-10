@@ -10,7 +10,6 @@ C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\bin\Debug\netc
 C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\TodoApi.csprojAssemblyReference.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\staticwebassets\TodoApi.StaticWebAssets.Manifest.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\staticwebassets\TodoApi.StaticWebAssets.xml
-C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\TodoApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\TodoApi.AssemblyInfoInputs.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\TodoApi.AssemblyInfo.cs
 C:\Users\Zenika\source\repos\dotnet-core-training\TodoApi\TodoApi\obj\Debug\netcoreapp3.0\TodoApi.RazorTargetAssemblyInfo.cache
