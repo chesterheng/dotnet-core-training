@@ -12,7 +12,6 @@ C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\bin\Debug\netcoreapp3.
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\MvcTodo.csprojAssemblyReference.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\staticwebassets\MvcTodo.StaticWebAssets.Manifest.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\staticwebassets\MvcTodo.StaticWebAssets.xml
-C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\MvcTodo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\MvcTodo.RazorAssemblyInfo.cache
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\MvcTodo.RazorAssemblyInfo.cs
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\MvcTodo.AssemblyInfoInputs.cache
