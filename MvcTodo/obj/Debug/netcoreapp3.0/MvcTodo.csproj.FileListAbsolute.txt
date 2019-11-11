@@ -124,3 +124,8 @@ C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\bin\Debug\netcoreapp3.
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\MvcTodo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\Razor\Views\TodoItems\Create.cshtml.g.cs
+C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\Razor\Views\TodoItems\Delete.cshtml.g.cs
+C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\Razor\Views\TodoItems\Details.cshtml.g.cs
+C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\Razor\Views\TodoItems\Edit.cshtml.g.cs
+C:\Users\Zenika\source\repos\dotnet-core-training\MvcTodo\obj\Debug\netcoreapp3.0\Razor\Views\TodoItems\Index.cshtml.g.cs
